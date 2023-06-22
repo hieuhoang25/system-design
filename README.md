@@ -20,3 +20,4 @@ Web server capabilities: Tomcat can act as a standalone web server, serving stat
 - - Management and monitoring: Tomcat provides various tools and interfaces for managing and monitoring deployed applications, including a web-based administration console.
 ***In summary, Netty is primarily focused on low-level network programming and building high-performance network applications, while Tomcat is designed for running Java web applications and serving HTTP requests. Depending on your specific use case, you would choose one over the other.***
 https://github.com/angular-vietnam/100-days-of-angular
+- - Recapchar architectures
