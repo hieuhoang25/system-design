@@ -88,13 +88,30 @@ It's important to note that although HTTP-only cookies enhance security, they ar
 ### Cơ chế hoạt động của HTTP Only cookie trong việc làm mới (refresh) token trong ứng dụng web có thể được mô tả như sau:
 
 - Đầu tiên, khi người dùng đăng nhập vào ứng dụng và gửi yêu cầu xác thực, máy chủ sẽ tạo một cặp cookie bao gồm một cookie session và một cookie refresh token. Cookie session thường có thời gian sống ngắn hơn, trong khi cookie refresh token sẽ có thời gian sống lâu hơn.
-
+![Alt text](https://github.com/hieuhoang25/system-design/blob/main/Screenshot%202023-06-24%20at%2022.00.46.png)
 - Cookie session được thiết lập với thuộc tính HTTP Only, điều này có nghĩa là nó chỉ có thể được truy cập thông qua giao thức HTTP và không thể truy cập bằng JavaScript. Điều này giúp ngăn chặn tấn công Cross-Site Scripting (XSS), trong đó kẻ tấn công có thể đánh cắp cookie thông qua mã JavaScript độc hại.
 
 - Khi access token hết hạn, người dùng tiếp tục sử dụng ứng dụng và gửi yêu cầu xác thực, máy chủ sẽ kiểm tra xem cookie session có tồn tại hay không. Nếu cookie session vẫn còn hiệu lực, máy chủ sẽ tạo lại access token mới và gửi nó đến client thông qua phản hồi HTTP.
-
+![Alt text](https://github.com/hieuhoang25/system-design/blob/main/Screenshot%202023-06-24%20at%2022.02.40.png)
 - Nếu cookie session đã hết hạn hoặc không tồn tại, máy chủ sẽ kiểm tra cookie refresh token. Nếu cookie refresh token còn hiệu lực, máy chủ sẽ sử dụng nó để tạo lại cặp cookie session và access token mới, và gửi chúng đến client.
-
+![Alt text](https://github.com/hieuhoang25/system-design/blob/main/Screenshot%202023-06-24%20at%2022.02.03.png)
 - Nếu cả cookie session và cookie refresh token đều đã hết hạn hoặc không tồn tại, người dùng sẽ bị đăng xuất khỏi ứng dụng và được yêu cầu đăng nhập lại.
 
 - Tóm lại, cơ chế hoạt động của HTTP Only cookie trong việc làm mới token (refresh token) giúp bảo vệ thông tin xác thực của người dùng bằng cách giới hạn truy cập của cookie chỉ thông qua giao thức HTTP và ngăn chặn tấn công XSS. Nó cho phép máy chủ sử dụng cookie refresh token để tạo lại session và access token khi cần thiết, giúp duy trì phiên làm việc của người dùng trong ứng dụng web.
+![Alt text](https://github.com/hieuhoang25/system-design/blob/main/Screenshot%202023-06-24%20at%2022.04.02.png)
+
+### Cơ chế ghi nhớ mật khẩu trong ứng dụng web thường được thực hiện bằng cách sử dụng một cookie ghi nhớ hoặc một phiên làm việc dài hạn. Dưới đây là một cơ chế thông thường để hiểu cách nó hoạt động:
+
+- Người dùng đăng nhập vào ứng dụng bằng tên đăng nhập và mật khẩu.
+
+- Khi người dùng chọn tùy chọn "Ghi nhớ mật khẩu", ứng dụng tạo một cookie hoặc phiên làm việc dài hạn chứa thông tin đăng nhập của người dùng, chẳng hạn như một mã thông báo (token) xác thực.
+
+- Cookie hoặc phiên làm việc dài hạn được lưu trữ trên máy tính của người dùng, thông qua trình duyệt web.
+
+- Khi người dùng truy cập lại ứng dụng web sau khi đã đăng xuất hoặc đóng trình duyệt, ứng dụng kiểm tra xem- có tồn tại cookie ghi nhớ hoặc phiên làm việc dài hạn hay không.
+
+- Nếu cookie hoặc phiên làm việc dài hạn tồn tại, ứng dụng sẽ sử dụng thông tin đăng nhập trong cookie hoặc phiên làm việc để tự động đăng nhập người dùng, mà không yêu cầu nhập lại tên đăng nhập và mật khẩu.
+
+- Trong trường hợp người dùng muốn đăng xuất hoặc xóa cookie ghi nhớ, ứng dụng sẽ xóa cookie hoặc phiên làm việc dài hạn khỏi máy tính của người dùng.
+Lưu ý rằng cơ chế ghi nhớ mật khẩu chỉ nên được sử dụng khi người dùng truy cập từ máy tính cá nhân hoặc thiết bị riêng. Trên các thiết bị công cộng hoặc chia sẻ, nên khuyến khích người dùng không sử dụng tính năng này để bảo vệ thông tin cá nhân và tài khoản.
+
