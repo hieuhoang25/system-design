@@ -1,3 +1,8 @@
+# several blog or website:
+- !alt[Roadmap](https://devdocs.io/)
+- !alt[Code Beautify](https://codebeautify.org/)
+- !alt[Dev Docs](https://roadmap.sh/)
+
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
