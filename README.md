@@ -3,7 +3,7 @@
 - [Code Beautify](https://codebeautify.org/)
 - [Dev Docs](https://roadmap.sh/)
 - [QA](https://fullstackindepth.com/)
-- [Blogs](https://anonystick.com/)
+- [Blogs JavaScript](https://anonystick.com/)
 
 # System Design
 ## 1. Tomcat and Netty
