@@ -94,7 +94,7 @@ To set an HTTP-only cookie in an HTTP response, the server includes the HttpOnly
 In this example, the sessionid cookie is marked as HTTP-only with the HttpOnly attribute. The browser will honor this attribute and ensure that the cookie is only accessible through the HTTP protocol.
 
 It's important to note that although HTTP-only cookies enhance security, they are not a complete solution for preventing all types of attacks. Other security measures, such as secure transmission of data over HTTPS, input validation, and proper server-side security practices, should also be implemented to ensure the overall security of a web application.
-### Cơ chế hoạt động của HTTP Only cookie trong việc làm mới (refresh) token trong ứng dụng web có thể được mô tả như sau:
+### 8 .Cơ chế hoạt động của HTTP Only cookie trong việc làm mới (refresh) token trong ứng dụng web có thể được mô tả như sau:
 
 - Đầu tiên, khi người dùng đăng nhập vào ứng dụng và gửi yêu cầu xác thực, máy chủ sẽ tạo một cặp cookie bao gồm một cookie session và một cookie refresh token. Cookie session thường có thời gian sống ngắn hơn, trong khi cookie refresh token sẽ có thời gian sống lâu hơn.
 ![Alt text](https://github.com/hieuhoang25/system-design/blob/main/Screenshot%202023-06-24%20at%2022.00.46.png)
@@ -109,7 +109,7 @@ It's important to note that although HTTP-only cookies enhance security, they ar
 - Tóm lại, cơ chế hoạt động của HTTP Only cookie trong việc làm mới token (refresh token) giúp bảo vệ thông tin xác thực của người dùng bằng cách giới hạn truy cập của cookie chỉ thông qua giao thức HTTP và ngăn chặn tấn công XSS. Nó cho phép máy chủ sử dụng cookie refresh token để tạo lại session và access token khi cần thiết, giúp duy trì phiên làm việc của người dùng trong ứng dụng web.
 ![Alt text](https://github.com/hieuhoang25/system-design/blob/main/Screenshot%202023-06-24%20at%2022.04.02.png)
 
-### Cơ chế ghi nhớ mật khẩu trong ứng dụng web thường được thực hiện bằng cách sử dụng một cookie ghi nhớ hoặc một phiên làm việc dài hạn. Dưới đây là một cơ chế thông thường để hiểu cách nó hoạt động:
+### 9. Cơ chế ghi nhớ mật khẩu trong ứng dụng web thường được thực hiện bằng cách sử dụng một cookie ghi nhớ hoặc một phiên làm việc dài hạn. Dưới đây là một cơ chế thông thường để hiểu cách nó hoạt động:
 
 - Người dùng đăng nhập vào ứng dụng bằng tên đăng nhập và mật khẩu.
 
@@ -123,4 +123,15 @@ It's important to note that although HTTP-only cookies enhance security, they ar
 
 - Trong trường hợp người dùng muốn đăng xuất hoặc xóa cookie ghi nhớ, ứng dụng sẽ xóa cookie hoặc phiên làm việc dài hạn khỏi máy tính của người dùng.
 Lưu ý rằng cơ chế ghi nhớ mật khẩu chỉ nên được sử dụng khi người dùng truy cập từ máy tính cá nhân hoặc thiết bị riêng. Trên các thiết bị công cộng hoặc chia sẻ, nên khuyến khích người dùng không sử dụng tính năng này để bảo vệ thông tin cá nhân và tài khoản.
-
+### 10. MVC, MVP, MVVM Design Partern [Reference article](https://www.makeuseof.com/mvc-mvp-mvvm-which-choose/#:~:text=The%20three%20most%20popular%20design,%2C%20view%2C%20and%20view%20model.)
+- MVC Partern : The model has no understanding of the view or the controller. The model's observer will receive an alert whenever there's a change in the view and controller. The controller helps the routing process to connect the model to the relevant view. Some of the MVC partern's advantages are:
+  - Separation of concerns (more focused).
+  - Makes it easier to test and manage the code.
+  - Promotes decoupling of the application's layers.
+  - Better code organization and reusability.
+    ![Alt text](https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/08/mvc.jpg?q=50&fit=crop&w=1500&dpr=1.5)
+    ![Alt text](https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/02/mvc-pattern-diagram.jpg?q=50&fit=crop&w=1500&dpr=1.5)
+- MVP Partern : Model-View-Presenter Pattern : The MVP pattern shares two components with MVC: model and view. It replaces the controller with the presenter. The presenter—as its name implies—is used to present something. It allows you to mock the view more easily. In MVP, the presenter has the functionality of the "middle-man" because all presentation logic is pushed to it. The view and presenter in MVP are also independent of one another and interact via an interface.
+  [Alt text](https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/08/mvp.jpg?q=50&fit=crop&w=1500&dpr=1.5)
+- MVVM Partern : Model-View-ViewModel Pattern : MVVM is the modern evolution of MVC. The main goal of MVVM is to provide a clear separation between the domain logic and presentation layer. MVVM supports two-way data binding between the view and viewmodel. The MVVM pattern allows you to separate your code’s view and model. This means that when the model changes the view doesn’t need to, and vice-versa. Using a viewmodel, you can do unit testing and test your logic behavior without involving your view.
+  ![Alt text](https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/08/mvvm.jpg?q=50&fit=crop&w=1500&dpr=1.5)
