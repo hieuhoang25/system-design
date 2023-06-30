@@ -138,8 +138,8 @@ Lưu ý rằng cơ chế ghi nhớ mật khẩu chỉ nên được sử dụng 
 ### 11. What is web server ? And How many web server
 ***Web Server is software and hardware that uses HTTP(Hypertext Transfer Protocol) and other protocols to respond to client requests made over the Word Wide Web. The main job of a web server is to display website content through storing, processing and delivering webpages to users. Besides HTTP, web servers also support SMTP(Simple Mail Transfer Protocol) and FTP(File Transfer Protocol), used for email, file transfer and storage. Webserver are used in web hosting, or the hosting of data of websites and web-based applications -- or web application***.
 - There are a number of common web servers available, some including:
--- Apache HTTP Server :  Developed by Apache Software Foundation, it is a free and open source web server for Windows, Mac OS X, Unix, Linux, Solaris and other operating systems; it needs the Apache license
--- Microsoft Internet Information Services (IIS). Developed by Microsoft for Microsoft platforms; it is not open sourced, but widely used.
--- Nginx : A popular open source web server for administrators because of its light resource utilization and scalability. It can handle many concurrent sessions due to its event-driven architecture. Nginx also can be used as a proxy server and load balancer. Should use
--- Lighttpd: A free web server that comes with the FreeBSD operating system. It is seen as fast and secure, while consuming less CPU power.
--- Sun Java System Web Server: A free web server from Sun Microsystems that can run on Windows, Linux and Unix. It is well-equipped to handle medium to large websites.
+  - Apache HTTP Server :  Developed by Apache Software Foundation, it is a free and open source web server for Windows, Mac OS X, Unix, Linux, Solaris and other operating systems; it needs the Apache license
+  - Microsoft Internet Information Services (IIS). Developed by Microsoft for Microsoft platforms; it is not open sourced, but widely used.
+  - Nginx : A popular open source web server for administrators because of its light resource utilization and scalability. It can handle many concurrent sessions due to its event-driven architecture. Nginx also can be used as a proxy server and load balancer. Should use
+  - Lighttpd: A free web server that comes with the FreeBSD operating system. It is seen as fast and secure, while consuming less CPU power.
+  - Sun Java System Web Server: A free web server from Sun Microsystems that can run on Windows, Linux and Unix. It is well-equipped to handle medium to large websites.
