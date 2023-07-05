@@ -150,4 +150,27 @@ Lưu ý rằng cơ chế ghi nhớ mật khẩu chỉ nên được sử dụng 
 - DNS (Domain Name System): DNS is a fundamental part of the internet's infrastructure. It is a hierarchical naming system that translates human-readable domain names(such as www.example.com) into IP addresses (such as 192.0.2.1) that computers use to identify each other on the internet. When you type a website address into your browser, the DNS system is responsible for resolving the domain name to the corresponding IP address, enabling your device to connect to the correct server. DNS servers are distributed globally and help facilitate the translation process, allowing users to access websites and other online services using domain names rather than having to remember IP addresses.
 ***Overall, while VPNs focus on securing and encrypting internet connections, VPSs provide dedicated virtual server environments, and DNS enables the translation of domain names into IP addresses for efficient internet browsing.***
 <img width="1061" alt="Screenshot 2023-05-27 at 16 46 04" src="https://github.com/hieuhoang25/system-design/assets/74962312/7aa85cc0-909c-4715-8f73-5151339bfaa0">
+### 13. Webhook
 
+![maxresdefault](https://github.com/hieuhoang25/system-design/assets/74962312/f9f123b1-cf50-4abe-8486-29aacfbe1b7c)
+
+***A webhook is a way for two systems or application to communicate with each other in real-time. It is a mechanism that allows one system to send data another system automatically when a specific event or trigger occurs***
+
+![apa-itu-webhook-zoho-assist-2022-08](https://github.com/hieuhoang25/system-design/assets/74962312/c603e102-8e7b-4cd2-8866-033247a9cc0a)
+
+Here's how a webhook typically works:
+- Setting up the webhook: The receiving system(usually a server or web application) provides a URL where it expects to receive data. This URL acts as an endpoint for webhook.
+- Trigger Event: The sending system(often an external service or application) monitors for a specific event or action. When this event occurs, the sending system generates data to be sent to the webhook.
+- Sending data: The sending system initiates an HTTP POST request to the webhook URL, typically including the relevant data in the request payload. This request notifies the receiving system about the event.
+- Processing the webhook: The receiving system receives the HTTP request from the webhook and performs actions based on the data received. This can involve updating a database, triggering further processes, sending notifications, or any other desired behavior.
+  
+Webhooks are commonly used in various scenarios, such as:
+
+- Integrating third-party services: Webhooks allow external services to notify your application about events or data updates, enabling real-time synchronization. For example, a payment gateway might send a webhook when a payment is processed.
+- Event-driven architectures: Webhooks facilitate event-driven communication between different components or microservices in a system. When an event occurs, a webhook can be used to trigger subsequent actions.
+- Notifications and alerts: Webhooks are useful for sending notifications or alerts in real time. For instance, a monitoring system can send a webhook to notify about a system failure.
+- Web API callbacks: Webhooks provide a way for API Clients to receive updates from the API server asynchronously. Instead of repeatedly polling for new data the server can push updates to the client via webhooks.
+***Webhook là một cơ chế hoặc một phương thức để truyền tải dữ liệu tự động từ một ứng dụng hoặc dịch vụ mà bạn đã đăng ký đến một ứng dụng hoặc dịch vụ khác. Nó hoạt động dựa trên sự kích hoạt của sự kiện và thông qua việc gửi HTTP POST request từ nguồn gốc đến đích. Webhook cho phép các ứng dụng giao tiếp và chia sẻ thông tin một cách tự động và thời gian thực.
+Để sử dụng webhook, bạn cần có một ứng dụng hoặc dịch vụ đóng vai trò là nguồn gốc webhook, và một ứng dụng hoặc dịch vụ khác đóng vai trò là đích webhook. Khi xảy ra sự kiện quan trọng trong nguồn gốc webhook, nó sẽ gửi một HTTP POST request chứa dữ liệu liên quan đến sự kiện đó đến đích webhook. Đích webhook sau đó có thể xử lý dữ liệu và thực hiện các hành động tương ứng.
+Cách cấu hình và sử dụng webhook phụ thuộc vào từng ứng dụng hoặc dịch vụ cụ thể mà bạn đang sử dụng. Thông thường, bạn sẽ cần cung cấp URL đích webhook (endpoint URL) cho nguồn gốc webhook để nó biết nơi gửi dữ liệu. Đồng thời, bạn cũng sẽ cần xử lý và xác thực dữ liệu được gửi đến từ nguồn gốc webhook trong ứng dụng hoặc dịch vụ của mình.
+Webhook được sử dụng rộng rãi trong các lĩnh vực như tích hợp ứng dụng, thông báo thời gian thực, tự động hóa quy trình và liên kết dữ liệu giữa các hệ thống khác nhau.***
