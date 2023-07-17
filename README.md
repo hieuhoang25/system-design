@@ -1,4 +1,4 @@
- # several blog or website:
+ # Several blogs or websites:
 - [Roadmap](https://devdocs.io/)
 - [Code Beautify](https://codebeautify.org/)
 - [Dev Docs](https://roadmap.sh/)
@@ -7,6 +7,7 @@
 - [Interview](https://docs.google.com/document/d/1-Yvb4kVJdTWE8Wk7qrDjNqV7uN8EtfOvV6Chxip8V0o/edit?fbclid=IwAR0sSMejFPwzwOwe9U-gj-LfD2tpXtRYd0g7EI4Rb2t83eDLjIvBSb9miv4#)
 - [Techmaster](https://techmaster.vn/posts)
 - [GPCoder](https://gpcoder.com/)
+- [Bytebytecode](https://blog.bytebytego.com/)
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
@@ -269,7 +270,9 @@ In the “Sign in with Google” example, OAuth 2.0 defines four roles:
 - Resource server: The Google server hosting user profiles as protected resources. It uses access tokens to respond to protected resource requests, ensuring that only authorized services can access the data.
 - Client: The device (PC or smartphone) making requests on behalf of the resource owner. This device represents the third-party application seeking access to the user's data.
 - Authorization server: The Google authorization server that issues tokens to clients, managing the secure exchange of tokens between the resource server and the client.
+  
 OAuth 2.0 offers four types of authorization grants to accommodate different situations:
+
 - Authorization code grant: The most complete and versatile mode, suitable for most application types. More details below.
 - Authorization code grant: The most complete and versatile mode, suitable for most application types. More details below.
 - Resource owner password credentials grant: Used when users trust a third-party application with their credentials, such as a trusted mobile app.
@@ -277,11 +280,24 @@ OAuth 2.0 offers four types of authorization grants to accommodate different sit
 The standard provides multiple modes to cater to different application scenarios and requirements, ensuring flexibility and adaptability for diverse situations.
 The authorization code grant is one example worth examining. The specifications for the other three grant types are available in [RFC-6749](https://www.rfc-editor.org/rfc/rfc6749).
 ![Alt text](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fce0b4f94-1fae-4d70-a71e-1f82ef93220c_1600x1257.png)
-
-
-
-
-
+### 14. How to Improve API Performance
+![Alt text](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fccd8dede-de4d-4fab-bc5f-c2e64c2fbe90_1488x1536.jpeg)
+1. Pagination
+This is a common optimization when the size of the result is large. The results are streaming back to the client to improve the service responsiveness.
+2. Asynchronous Logging
+Synchronous logging deals with the disk for every call and can slow down the system. Asynchronous logging sends logs to a lock-free buffer first and immediately returns. The logs will be flushed to the disk periodically. This significantly reduces the I/O overhead.
+3. Caching
+We can cache frequently accessed data into a cache. The client can query the cache first instead of visiting the database directly. If there is a cache miss, the client can query from the database. Caches like Redis store data in memory, so the data access is much faster than the database.
+4. Payload Compression
+The requests and responses can be compressed using gzip etc so that the transmitted data size is much smaller. This speeds up the upload and download.
+5. Connection Pool
+When accessing resources, we often need to load data from the database. Opening the closing db connections add significant overhead. So we should connect to the db via a pool of open connections. The connection pool is responsible for managing the connection lifecycle.
+### 15. What branching strategies does your team use?
+Teams often employ various branching strategies for managing their code, such as Git flow, feature branches, and trunk-based development.
+![Alt text](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9a738bd7-dd4c-4e5c-a6fb-3fbecc96b211_1410x1262.jpeg)
+Out of these options, Git flow or its variations are the most widely favored methods. The illustration by Jetbrains explains how it works.
+### 16. Data is used everywhere, but do you know all the commonly used data terms?
+![Alt text](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd647466d-68a4-4148-ad40-855459737271_1577x1536.jpeg)
 
 
 
