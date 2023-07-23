@@ -8,6 +8,8 @@
 - [Techmaster](https://techmaster.vn/posts)
 - [GPCoder](https://gpcoder.com/)
 - [Bytebytecode](https://blog.bytebytego.com/)
+- [Master spring boot](http://www.masterspringboot.com/)
+- [Security Zines](https://securityzines.com/)
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
@@ -298,8 +300,56 @@ Teams often employ various branching strategies for managing their code, such as
 Out of these options, Git flow or its variations are the most widely favored methods. The illustration by Jetbrains explains how it works.
 ### 16. Data is used everywhere, but do you know all the commonly used data terms?
 ![Alt text](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd647466d-68a4-4148-ad40-855459737271_1577x1536.jpeg)
+### 17. Explaining JSON Web Token (JWT)
+![Alt text](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffce4ecfc-6dc8-46f6-ae4f-f05b8da3467a_1530x1536.jpeg?utm_source=substack&utm_medium=email)
+The header is like the label on the outside of the box. It tells us what type of box it is and how it's secured. It's usually written in a format called JSON, which is just a way to organize information using curly braces { } and colons :
 
+The payload is like the actual message or information you want to send. It could be your name, age, or any other data you want to share. It's also written in JSON format, so it's easy to understand and work with.
 
+Now, the signature is what makes the JWT secure. It's like a special seal that only the sender knows how to create. The signature is created using a secret code, kind of like a password. This signature ensures that nobody can tamper with the contents of the JWT without the sender knowing about it.
+
+When you want to send the JWT to a server, you put the header, payload, and signature inside the box. Then you send it over to the server. The server can easily read the header and payload to understand who you are and what you want to do.
+### 18. How does Docker work?
+![Alt text](https://ci3.googleusercontent.com/proxy/fEBXKxswn0LZb5yKDyP5RamtktfjtT6h7RbmrIsJTQpbMnvukIxiVgHTNRAcrr6ptg4HaxUmQvgByzqACUMJquHskOifAlmzj5jOLL8sccIga1NdJA4GGI5phNYQNcsY0RnlVaRwovlsLnTXPJpAjROuMcfMUPp_kATQcAMoHo_4SION4f-E-BkPBXi9nRPbMlqrZqRW6khH13cLrELX_cYGbjl039Hn_4qxmT0_W6kjem9_-l1PGGSS-56_E_OiAywGE4haJ9cPuF-KK7PyT4AdpUGqdm10j5ilwpIoa001Tv-PHj7hRNk=s0-d-e1-ft#https://substackcdn.com/image/fetch/w_2912,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc69f4fe6-2606-47c4-b093-3de6914d942b_1602x1536.jpeg)
+There are 3 components in Docker architecture:
+
+- Docker client : The docker client talks to the Docker daemon.
+
+- Docker host :The Docker daemon listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes.
+
+- Docker registry: A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use.
+
+- Let’s take the “docker run” command as an example.
+
+ - Docker pulls the image from the registry.
+
+ - Docker creates a new container.
+
+ - Docker allocates a read-write filesystem to the container.
+
+ - Docker creates a network interface to connect the container to the default network.
+
+ - Docker starts the container.
+
+### 19. Top 6 most commonly used Server Types
+![Alt text](https://ci4.googleusercontent.com/proxy/fnFLJ_cXg51v0el_cs4Uv5hcMizxEZAc3RnC_aRLXc4tnXrXmDxE2MH0-XMESLBuwYp_irn6O6aHe10nDv1cSJse5ZJjMHA7rqHvmN5vzIyCSXmFOsVLnzuUBPSjFBUg3EJtuVBXwzjc3yMIMNyb8GDcEeRKfGfiRW2G3x39RFhZt5Djn7y5f9UycBprCgK39nxte6UmrRxW_QihHerBMPl0bn0rVpzGvoFcBs_im9rhKmgEaEXUXsv9SYmI4Ne668AWViAb7is2A9OHVQ-3gt3DQrUobwkv1hvEpiiCkvP6jWe01JBLEus=s0-d-e1-ft#https://substackcdn.com/image/fetch/w_2912,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4cd58a79-de9c-4ac2-a6df-eac95b61d71e_1541x1536.jpeg)
+- Web Server:
+Hosts websites and delivers web content to clients over the internet
+
+- Mail Server:
+Handles the sending, receiving, and routing of emails across networks
+
+- DNS Server:
+Translates domain names (like bytebytego. com) into IP addresses, enabling users to access websites by their human-readable names.
+
+- Proxy Server:
+An intermediary server that acts as a gateway between clients and other servers, providing additional security, performance optimization, and anonymity.
+
+- FTP Server:
+Facilitates the transfer of files between clients and servers over a network
+
+- Origin Server:
+Hosts central source of content that is cached and distributed to edge servers for faster delivery to end users.
 
 
 
