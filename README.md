@@ -350,9 +350,23 @@ Facilitates the transfer of files between clients and servers over a network
 
 - Origin Server:
 Hosts central source of content that is cached and distributed to edge servers for faster delivery to end users.
+### 20. OpenID Connect, OAuth 2.0, and SAML
+1. OAuth 2.0
+OAuth 2.0 is an authorization framework that allows a user to grant third-party applications limited access to their resources (e.g., data) on a resource server without sharing their credentials with the application directly. It is primarily used for delegated authorization, enabling applications to access APIs on behalf of the user. OAuth 2.0 defines various grant types (authorization flows) like Authorization Code, Implicit, Client Credentials, and Resource Owner Password Credentials, each suitable for different use cases. It is not designed for authentication purposes but focuses on authorization and access control.
+2. OpenID Connect (OIDC):
+OpenID Connect is an authentication layer built on top of OAuth 2.0. It extends OAuth 2.0 by providing a standardized way for clients to verify the identity of end-users based on the authentication performed by an authorization server. In other words, OIDC enables applications to obtain information about the user (claims) and verify their identity during the authorization process. It uses JSON Web Tokens (JWTs) to represent identity information. OpenID Connect is commonly used for Single Sign-On (SSO) scenarios, allowing users to log in once and then access multiple applications without re-entering their credentials.
+3. Security Assertion Markup Language (SAML)
+SAML is an XML-based standard used for exchanging authentication and authorization data between identity providers (IdP) and service providers (SP). Unlike OAuth 2.0 and OIDC, SAML is primarily focused on Web Browser SSO and federated identity scenarios. In a typical SAML flow, the user requests access to a service provided by an SP. The SP then redirects the user to the IdP, where the user is authenticated. After successful authentication, the IdP generates a SAML assertion containing user attributes and signs it cryptographically. The user is then redirected back to the SP with the SAML assertion, and the SP uses it to verify the user's identity and grant access to the requested service.
+### 21. JWT, JWK And JWS
+[Reference Post](https://www.loginradius.com/blog/engineering/guest-post/what-are-jwt-jws-jwe-jwk-jwa/)
+1. JWT (JSON Web Token):
+JSON Web Token (JWT) is a compact and self-contained way to represent information between two parties. It is commonly used to transmit claims (payload) between the authentication server (identity provider) and the application (service provider) securely. A JWT consists of three parts, separated by dots ('.'): header, payload, and signature. The header typically contains information about the type of token and the signing algorithm used. The payload contains the claims, which are statements about an entity (usually the user) and additional metadata. The signature is created by combining the header, payload, and a secret key, which is used to verify the integrity and authenticity of the JWT.
 
+2. JWK (JSON Web Key):
+JSON Web Key (JWK) is a JSON format that represents a cryptographic key used in various web security protocols, including JWT. JWK provides a standardized way to describe cryptographic keys, such as RSA, ECDSA, or HMAC keys, along with additional key metadata. This format is especially useful when multiple parties need to exchange or share public keys securely.
 
-
+3. JWS (JSON Web Signature):
+JSON Web Signature (JWS) is a standard for signing data, typically used to secure JWTs. A JWS allows you to take a payload (e.g., the contents of a JWT) and produce a digital signature that ensures the integrity and authenticity of the data. The signature is generated using a cryptographic algorithm (e.g., HMAC, RSA, or ECDSA) and a secret key (for symmetric algorithms) or a private key (for asymmetric algorithms). The recipient of the JWS can then use the corresponding public key (for asymmetric algorithms) or the shared secret key (for symmetric algorithms) to verify the signature and ensure that the data has not been tampered with.
 
 
 
