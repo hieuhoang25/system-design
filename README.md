@@ -10,6 +10,9 @@
 - [Bytebytecode](https://blog.bytebytego.com/)
 - [Master spring boot](http://www.masterspringboot.com/)
 - [Security Zines](https://securityzines.com/)
+- [All blogs from spring](https://www.devglan.com/programming/springframework-blogs)
+- [All blogs from spring](https://blog.feedspot.com/spring_blogs/)
+- [All blogs from spring](https://feedly.com/i/top/spring-blogs)
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
