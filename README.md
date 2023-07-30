@@ -1,7 +1,7 @@
  # Several blogs or websites:
-- [Roadmap](https://devdocs.io/)
+- [Roadmap](https://roadmap.sh/)
 - [Code Beautify](https://codebeautify.org/)
-- [Dev Docs](https://roadmap.sh/)
+- [Dev Docs](https://devdocs.io/)
 - [QA](https://fullstackindepth.com/)
 - [Blogs JavaScript](https://anonystick.com/)
 - [Interview](https://docs.google.com/document/d/1-Yvb4kVJdTWE8Wk7qrDjNqV7uN8EtfOvV6Chxip8V0o/edit?fbclid=IwAR0sSMejFPwzwOwe9U-gj-LfD2tpXtRYd0g7EI4Rb2t83eDLjIvBSb9miv4#)
@@ -10,9 +10,12 @@
 - [Bytebytecode](https://blog.bytebytego.com/)
 - [Master spring boot](http://www.masterspringboot.com/)
 - [Security Zines](https://securityzines.com/)
-- [All blogs from spring](https://www.devglan.com/programming/springframework-blogs)
-- [All blogs from spring](https://blog.feedspot.com/spring_blogs/)
-- [All blogs from spring](https://feedly.com/i/top/spring-blogs)
+- [All blogs from spring1](https://www.devglan.com/programming/springframework-blogs)
+- [All blogs from spring2](https://blog.feedspot.com/spring_blogs/)
+- [All blogs from spring3](https://feedly.com/i/top/spring-blogs)
+- [Java By Examples](http://www.javabyexamples.com/)
+- [Toptal](https://www.toptal.com/developers)
+- [All blogs from spring4](https://www.baeldung.com/java-blogs)
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
