@@ -374,7 +374,9 @@ JSON Web Key (JWK) is a JSON format that represents a cryptographic key used in 
 
 3. JWS (JSON Web Signature):
 JSON Web Signature (JWS) is a standard for signing data, typically used to secure JWTs. A JWS allows you to take a payload (e.g., the contents of a JWT) and produce a digital signature that ensures the integrity and authenticity of the data. The signature is generated using a cryptographic algorithm (e.g., HMAC, RSA, or ECDSA) and a secret key (for symmetric algorithms) or a private key (for asymmetric algorithms). The recipient of the JWS can then use the corresponding public key (for asymmetric algorithms) or the shared secret key (for symmetric algorithms) to verify the signature and ensure that the data has not been tampered with.
-
-
+### 22. Tính năng mới của JDK 21
+1. Sequenced collections
+![Alt text](https://developers.redhat.com/sites/default/files/styles/article_full_width_1440px_w/public/image_0.png?itok=I6nIw--u)
+![SequencedCollectionDiagram20220216](https://github.com/hieuhoang25/system-design/assets/74962312/52262d55-1156-4e88-8dc2-66d3f3a4ab06)
 
 
