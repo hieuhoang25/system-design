@@ -16,6 +16,7 @@
 - [Java By Examples](http://www.javabyexamples.com/)
 - [Toptal](https://www.toptal.com/developers)
 - [All blogs from spring4](https://www.baeldung.com/java-blogs)
+- https://springframework.guru/
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
