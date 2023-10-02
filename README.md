@@ -378,5 +378,6 @@ JSON Web Signature (JWS) is a standard for signing data, typically used to secur
 1. Sequenced collections
 ![Alt text](https://developers.redhat.com/sites/default/files/styles/article_full_width_1440px_w/public/image_0.png?itok=I6nIw--u)
 ![SequencedCollectionDiagram20220216](https://github.com/hieuhoang25/system-design/assets/74962312/52262d55-1156-4e88-8dc2-66d3f3a4ab06)
+![sequencedcollection-sequencedset-java-21-800x589](https://github.com/hieuhoang25/system-design/assets/74962312/95739dba-b75f-488c-b72a-14dcd700c18f)
 
 
