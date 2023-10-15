@@ -17,6 +17,7 @@
 - [Toptal](https://www.toptal.com/developers)
 - [All blogs from spring4](https://www.baeldung.com/java-blogs)
 - https://springframework.guru/
+- [https://piotrminkowski.com/]
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
@@ -379,5 +380,12 @@ JSON Web Signature (JWS) is a standard for signing data, typically used to secur
 ![Alt text](https://developers.redhat.com/sites/default/files/styles/article_full_width_1440px_w/public/image_0.png?itok=I6nIw--u)
 ![SequencedCollectionDiagram20220216](https://github.com/hieuhoang25/system-design/assets/74962312/52262d55-1156-4e88-8dc2-66d3f3a4ab06)
 ![sequencedcollection-sequencedset-java-21-800x589](https://github.com/hieuhoang25/system-design/assets/74962312/95739dba-b75f-488c-b72a-14dcd700c18f)
-
-
+### 23. The 6 most impactful ways is Used in Production Systems
+1. Cache
+A cache is an essential part of system. It provides a shortcut to access hot data and improves performance. A typical cache architecture has three layers:
+- Application Cache: This sits inside the application's memory and is usually a hashmap holding frequently accessed data like user profiles. The cache size is small and data is lost when the app restarts.
+- Second-level Cache: This is often an in-process or out-of-process cache like EhCache. It required configuring an eviction policy like LRU, LFU, or TTL-based eviction for automatic cache invalidation. The cache is local to each server.'
+- Distributed Cache: This is usually Redis, deployed on separate servers from the application servers. Redis supports different eviction policies to control what data stays in the cache. The cache can be shared across multiple servers for horizontal scalability. The cache is shared across multiple apps. Redis offers persistence, replication for high availability, and a rich set of data structures.
+![Alt text](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbfb153fa-0c75-4fc8-8d4f-485d29300546_1600x854.png)
+2. Session Store
+![Alt text](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2993c172-a88a-4f5f-8dce-5033240ae0c8_1132x1600.png)
