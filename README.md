@@ -18,6 +18,14 @@
 - [All blogs from spring4](https://www.baeldung.com/java-blogs)
 - https://springframework.guru/
 - [https://piotrminkowski.com/]
+# angular-document
+[Angular.io](https://angular.io/tutorial)
+[Angular api](https://angular.io/api)
+[Angular vietnam]( https://github.com/angular-vietnam/100-days-of-angular)
+[Angular youtube](https://www.youtube.com/@Angular/featured)
+[Roadmap Angular](https://roadmap.sh/angular)
+[Angular Vietnam Youtube](https://www.youtube.com/@AngularVietnam)
+[Community](https://dev.to/search?q=angular)
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
