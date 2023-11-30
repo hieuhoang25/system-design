@@ -18,6 +18,7 @@
 - [All blogs from spring4](https://www.baeldung.com/java-blogs)
 - https://springframework.guru/
 - [https://piotrminkowski.com/]
+- [Dzone](https://dzone.com/)
 # angular-document
 - [Angular.io](https://angular.io/tutorial)
 - [Angular api](https://angular.io/api)
@@ -26,6 +27,18 @@
 - [Roadmap Angular](https://roadmap.sh/angular)
 - [Angular Vietnam Youtube](https://www.youtube.com/@AngularVietnam)
 - [Community](https://dev.to/search?q=angular)
+# sql blog
+- [SQL tutorial](https://www.sqltutorial.org/)
+- [Oracle tutorial](https://www.oracletutorial.com/)
+- [SQL server tutorial](https://www.sqlservertutorial.net/)
+- [Mysql tutorial](https://www.mysqltutorial.org/)
+- [Postgres tutorial](https://www.postgresqltutorial.com/)
+- [MarialDB tutorial](https://www.mariadbtutorial.com/)
+# java library 
+- [Apache common](https://commons.apache.org/?fbclid=IwAR0X5AP2TxXGtAcF72Vi6wlvrWK6F_p1irJLuUSMapERvs_FAaV2qu71BcQ)
+- [Apache project](https://www.apache.org/logos/?fbclid=IwAR1I1C3by71I6ZyDVg0L9mk_w_H8bwzsVKYYs3oeT93qmcn6YeNkeM1sico)
+- [Google Gauva](https://www.baeldung.com/guava-guide)
+- [Loda Time](https://www.joda.org/joda-time/)
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
