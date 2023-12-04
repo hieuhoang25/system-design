@@ -441,3 +441,51 @@ A cache is an essential part of system. It provides a shortcut to access hot dat
 - check length
 - check existed field
 - validate business
+### 25. How many way to read file from resource in java spring
+1. Classpath Resource Loading:
+```java
+Resource resource = new ClassPathResource("classpath:path/to/resource/file.txt");
+InputStream inputStream = resource.getInputStream();
+// Use the inputStream to read the contents of the resource
+```
+2. ServletContext Resource Loading
+```java
+Resource resource = new ServletContextResource(servletContext, "/WEB-INF/resource/file.txt");
+InputStream inputStream = resource.getInputStream();
+// Use the inputStream to read the contents of the resource
+```
+3. File System Resource Loading
+```java
+Resource resource = new FileSystemResource("/path/to/resource/file.txt");
+InputStream inputStream = resource.getInputStream();
+// Use the inputStream to read the contents of the resource
+```
+4. ResourceLoader Interface
+```java
+@Autowired
+private ResourceLoader resourceLoader;
+Resource resource = resourceLoader.getResource("classpath:path/to/resource/file.txt");
+InputStream inputStream = resource.getInputStream();
+// Use the inputStream to read the contents of the resource
+```
+5. Using ResourceUtils
+```java
+Resource resource = new ClassPathResource("classpath:path/to/resource/file.txt");
+File file = ResourceUtils.getFile(resource.getURL());
+// Now you can work with the File object directly
+```
+6. PropertiesLoaderUtils
+```java
+Properties properties = PropertiesLoaderUtils.loadProperties(new ClassPathResource("classpath:config.properties"));
+```
+7. Thread
+```java
+ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+InputStream fileInputStream = classLoader.getResourceAsStream(template);
+```
+8. Using Paths and Files
+```java
+Path path = Paths.get(ClassLoader.getSystemResource("file.txt").toURI());
+List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
+// Process the lines as needed
+```
