@@ -410,3 +410,34 @@ A cache is an essential part of system. It provides a shortcut to access hot dat
 ![Alt text](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbfb153fa-0c75-4fc8-8d4f-485d29300546_1600x854.png)
 2. Session Store
 ![Alt text](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2993c172-a88a-4f5f-8dce-5033240ae0c8_1132x1600.png)
+### 24. Validation topic
+1. Validate the field
+- fields required
+- fields dropdown -> check exists
+- fields default(0, 1 ; true, false)
+- checking length fields as a number, string, array
+- fields as array:
+- - check null or blank
+- - check duplicated
+- - with dropdown check exists
+2. Validate field as number(Number validation)
+- check null
+- check the field as a number
+- check max, min
+- check other
+3. Validate field as a string (String validation)
+- check null or empty
+- check length
+- check regex
+4. Validate field as array (Array validation)
+- check null or empty
+- check length
+5. Validate field as an object (Object validation)
+- check exists
+- check contains properties
+6. Step by step to validate
+- check exists if edit action
+- check required field
+- check length
+- check existed field
+- validate business
