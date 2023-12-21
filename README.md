@@ -20,6 +20,7 @@
 - [https://piotrminkowski.com/]
 - [Dzone](https://dzone.com/)
 - [Viblo](https://viblo.asia/newest)
+- [Java Tech Online](https://javatechonline.com/)
 # angular-document
 - [Angular.io](https://angular.io/tutorial)
 - [Angular api](https://angular.io/api)
