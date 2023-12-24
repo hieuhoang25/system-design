@@ -491,3 +491,61 @@ Path path = Paths.get(ClassLoader.getSystemResource("file.txt").toURI());
 List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
 // Process the lines as needed
 ```
+### 26. What are the differences Between Rest and Rpc?
+Rest(Representational State Transfer) and RPC(Remote Procedure Call) are two common architectural patterns used for communications in distributed systems. Rest is used for client-server (or server-server) communications, and RPC is used for server-server communications,  as illustrated in the diagram below.
+![image](https://github.com/hieuhoang25/system-design/assets/74962312/78e05ab0-10aa-4220-864d-b25baac8417b)
+### 27. What is API gateway
+In a microservices architecture, an API gateway acts as a single entry point for client requests. The API gateway is responsible for request routing, composition, and protocol translation. It also provides additional features like,authentication, authorization, caching, and rate limiting.
+![image](https://github.com/hieuhoang25/system-design/assets/74962312/7ef7360f-a54f-4c72-a1ac-853b6cc8402a)
+1. Step 1: The client sends an HTTP request to the API gateway.
+2. Step 2: The API gateway parses and validates the attributes in the HTTP request
+3. Step 3: The API gateway checks allow/deny lists.
+4. Step 4: The API gateway authenticates and authorizes through an identity provider.
+5. SteP 5: Rate-limiting rules are applied. Requests over the limit are rejected.
+6. Step 6 and 7: The API gateway routes the request to the relevant backend service by path matching.
+7. Step 8: The API gateway transforms the request into the appropriate protocol and forwards it to backend microservices.
+8. Step 9: The API gateway handles any errors that may arise during request processing for graceful degradation of service.
+9. Step 10: The API gateway implements resiliency patterns like circuit brakes to detect failures and prevent overloading interconnected services, avoiding cascading failures.
+10. Step 11: The API gateway utilizes observability tools like the ELK stack (Elastic Logstash KibanA) for logging, monitoring, tracing, and debugging.
+11. Step 12: The API gateway can optionally cache responses to common requests to improve responsiveness.
+11. Besides request routing, the API gateway can also aggregate responses from microservices into a single response for the client. The API gateway is different from a load balancer. While both handle network traffic, the API gateway operates at the application layer, mainly handling HTTP requests; the load balancer mostly operates at the transport layer, dealing with TCP/UDP protocols. The API gateway offers more functions as it sees the request payload. The API gateway differs from a load balancer in that it typically operates at the application layer to handle HTTP requests and understand message payloads, while traditional load balancers work at the transport layer to handle TCP/UDP connections without looking at the application data. However, the lines can blur between these two types of infrastructure. Some advanced load balancers are gaining application layer visibility and routing capabilities resembling API gateways. But in general, API gateways focus on application-level concerns like security, routing, composition, and resilience based on the payload, while traditional load balancers map requests to banked servers mainly based on transport-level metadata like IP and port numbers. We often have separate API gateways to handle requests from mobile architecture. We have different API gateways to handle requests from mobile devices and web applications because they have unique requirements for user experiences. Additionally, we separate WebSocket API Gateway because it has different connection persistence and rate-limiting requirements compared to HTTP gateways.
+![image](https://github.com/hieuhoang25/system-design/assets/74962312/2f05d40b-feab-4113-a149-13fb5a4a4fef)
+Some recent API gateway trends:
+1. GraphQL support. GraphQL is a type system and a query language for APIs. Many API gateways now offer integration with GraphQL
+2. Service Mesh integration. Service meshes like Istio and Linkerd are used to handle communications among microservices. API gateways are integrated with them to enhance traffic management capabilities.
+3. AI integration. API gateways are integrated with API capabilities to enable smarter request routing or anomaly detection in traffic patterns.
+### 28. REST API Authentication Methods
+Authentication in Rest APis acts as the crucial gateway, ensuring that solely authorized users or applications gain access to the API's resources.
+![image](https://github.com/hieuhoang25/system-design/assets/74962312/b380ffc9-dab2-4c94-bf7a-c1f874efec30)
+Some popular authentication methods for REST APIs include:
+1. Base Authentication:
+Involves sending a username and password with each request, but can be less secure without encryption.
+<br>
+When to use: Suitable for simple applications where security and encryption aren't the primary concern or when used over secured connections.
+2. Token Authentication:
+Uses generated tokens, like JSON Web Tokens (JWT), exchanged between client and server, offering enhanced security without sending login credentials with each request.
+<br>
+When to use: Ideal for more secure and scalable systems, especially when avoiding sending login credentials with each request is a priority.
+3. OAuth Authentication:
+Enables third-party limited access to user resources without revealing credentials by issuing access tokens after user authentications.
+<br>
+When to use: Ideal for scenarios requiring controlled access to use resources by third-party applications or services.
+4. API key Authentications:
+Assigns unique keys to users or applications, sent in header or parameters; while simple, it might lack the security features of token-based or OAuth methods.
+<br>
+When to use:
+Convenient for straightforward access control in less sensitive environments or for granting access to certain functionalities without the need for user-specific permissions.
+### Symmetric encryption vs asymmetric encryption
+Symmetric encryption and asymmetric encryption are two types of cryptographic techniques used to secure data and communications, but they differ in their methods of encryption and decryption.
+![image](https://github.com/hieuhoang25/system-design/assets/74962312/38a2fd21-6c5b-4a7c-b07f-c602edcabe8f)
+- In symmetric encryption, a single key is used for both encryption and decryption of data. It is faster and can be applied to bulk data encryption/decryption. For example, we can use it to encrypt massive amounts of PII(Personally Identifiable Information) data. It poses challenges in key management because the sender and receiver share the same key.
+- Asymmetric encryption uses a pair of keys: a public key and a private key. The public key is freely distributed and used to encrypt data, while the private key is kept secret and used to decrypt the data, It is more secure than symmetric encryption is slower because of the complexity of key generation and maths computations. For example, HTTPS ares asymmetric encryption to exchange session keys during TLS handshake, and after that, HTTPS uses symmetric encryption for subsequent communications.
+### How does Redis persist data?
+Redis is an in memory databases. If the server goes down. The data will lost
+<br>
+Two ways to persist Redis data on disk:
+1. AOF (Append-Only File)
+2. RDB (Redis database)
+![image](https://github.com/hieuhoang25/system-design/assets/74962312/cb0374dc-5c87-470c-9e7c-f177808e5c87)
+- OAF: Unlike a write-ahead log, the Redis AOF log is a write-after log. Redis executes commands to modify the data in memory firts and then writes it to the log file. AOF log records the commands instead of the data. The event-based design simplifies data recovery. Additionally, AOF records commands after the command has been executed in memory, so it does not block the current write operation.
+- RDB: The restriction of AOF is that it persists commands instead of data. When we use the AOF log for recovery, the whole log must be scanned. When the size of the log is large, Redis takes a long time to recover. So Redis provides another way to persist data
