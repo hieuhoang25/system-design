@@ -520,29 +520,25 @@ Authentication in Rest APis acts as the crucial gateway, ensuring that solely au
 Some popular authentication methods for REST APIs include:
 1. Base Authentication:
 Involves sending a username and password with each request, but can be less secure without encryption.
-<br>
 When to use: Suitable for simple applications where security and encryption aren't the primary concern or when used over secured connections.
 2. Token Authentication:
 Uses generated tokens, like JSON Web Tokens (JWT), exchanged between client and server, offering enhanced security without sending login credentials with each request.
-<br>
 When to use: Ideal for more secure and scalable systems, especially when avoiding sending login credentials with each request is a priority.
 3. OAuth Authentication:
 Enables third-party limited access to user resources without revealing credentials by issuing access tokens after user authentications.
-<br>
 When to use: Ideal for scenarios requiring controlled access to use resources by third-party applications or services.
 4. API key Authentications:
 Assigns unique keys to users or applications, sent in header or parameters; while simple, it might lack the security features of token-based or OAuth methods.
-<br>
 When to use:
 Convenient for straightforward access control in less sensitive environments or for granting access to certain functionalities without the need for user-specific permissions.
 ### 29. Symmetric encryption vs asymmetric encryption
 Symmetric encryption and asymmetric encryption are two types of cryptographic techniques used to secure data and communications, but they differ in their methods of encryption and decryption.
 ![image](https://github.com/hieuhoang25/system-design/assets/74962312/38a2fd21-6c5b-4a7c-b07f-c602edcabe8f)
+
 - In symmetric encryption, a single key is used for both encryption and decryption of data. It is faster and can be applied to bulk data encryption/decryption. For example, we can use it to encrypt massive amounts of PII(Personally Identifiable Information) data. It poses challenges in key management because the sender and receiver share the same key.
 - Asymmetric encryption uses a pair of keys: a public key and a private key. The public key is freely distributed and used to encrypt data, while the private key is kept secret and used to decrypt the data, It is more secure than symmetric encryption is slower because of the complexity of key generation and maths computations. For example, HTTPS ares asymmetric encryption to exchange session keys during TLS handshake, and after that, HTTPS uses symmetric encryption for subsequent communications.
 ### 30. How does Redis persist data?
 Redis is an in memory databases. If the server goes down. The data will lost
-<br>
 Two ways to persist Redis data on disk:
 1. AOF (Append-Only File)
 2. RDB (Redis database)
@@ -553,7 +549,6 @@ Two ways to persist Redis data on disk:
 1. Concurrency and Parallelism:
 - Concurrency: Manage multiple tasks simultaneously by switching between them.
 - Parallelism: Execute multiple tasks simultaneously, using multiple threads or processes.
-- 
 2. Threading and Asynchronous Processing:
 - Threads: Use multiple threads to handle different requests concurrently.
 - Asynchronous Processing: Employ asynchronous programming techniques to handle requests without blocking resources. This can be achieved with libraries like asyncio in Python, async/await in JavaScript, or async/await in C#.
