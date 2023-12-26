@@ -549,3 +549,28 @@ Two ways to persist Redis data on disk:
 ![image](https://github.com/hieuhoang25/system-design/assets/74962312/cb0374dc-5c87-470c-9e7c-f177808e5c87)
 - OAF: Unlike a write-ahead log, the Redis AOF log is a write-after log. Redis executes commands to modify the data in memory firts and then writes it to the log file. AOF log records the commands instead of the data. The event-based design simplifies data recovery. Additionally, AOF records commands after the command has been executed in memory, so it does not block the current write operation.
 - RDB: The restriction of AOF is that it persists commands instead of data. When we use the AOF log for recovery, the whole log must be scanned. When the size of the log is large, Redis takes a long time to recover. So Redis provides another way to persist data
+### Handling multiple requests to a server in the backend involves various strategies to manage and process incoming requests efficiently.
+1. Concurrency and Parallelism:
+- Concurrency: Manage multiple tasks simultaneously by switching between them.
+- Parallelism: Execute multiple tasks simultaneously, using multiple threads or processes.
+- 
+2. Threading and Asynchronous Processing:
+- Threads: Use multiple threads to handle different requests concurrently.
+- Asynchronous Processing: Employ asynchronous programming techniques to handle requests without blocking resources. This can be achieved with libraries like asyncio in Python, async/await in JavaScript, or async/await in C#.
+3. Connection Pooling:
+- Reuse existing connections to handle incoming requests rather than creating new connections for each request, reducing overhead.
+4. Load Balancing:
+- Distribute incoming requests across multiple servers or resources to balance the load and prevent overload on a single server.
+5. Caching:
+- Cache frequently requested data or responses to serve them quickly without reprocessing.
+6. Optimizing Database Queries:
+- Optimize database queries to reduce the time spent on fetching or updating data.
+7. Rate Limiting and Queuing:
+- Implement rate limiting to prevent overwhelming the server with too many requests at once.
+- Use queues to manage requests when the server is busy and process them in a controlled manner.
+8. Optimizing Server Configuration:
+- Tune server settings such as timeouts, buffer sizes, and connection limits to handle multiple requests efficiently.
+9. Monitoring and Scaling:
+- Monitor server performance and scale resources (horizontal or vertical scaling) based on demand to maintain optimal performance.
+10. Error Handling and Retry Mechanisms:
+- Implement robust error handling strategies and retry mechanisms for failed requests to ensure reliability.
