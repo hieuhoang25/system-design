@@ -569,3 +569,12 @@ Two ways to persist Redis data on disk:
 - Monitor server performance and scale resources (horizontal or vertical scaling) based on demand to maintain optimal performance.
 10. Error Handling and Retry Mechanisms:
 - Implement robust error handling strategies and retry mechanisms for failed requests to ensure reliability.
+### 32. S.O.L.I.D: The 5 golden rules to level up your coding skills
+1. S = Single Responsibility Principle (SRP)
+Single Responsibility Principle(SRP) is one of the five S.O.L.I.D principles, which states the each class should have only one responsibility, in order to preserve meaningful separation of concerns. This pattern is a solution to a common anti-pattern called "The God Object" which simply refers to a class or object that holds too many responsibilities, making it difficult to understand, test and maintain.
+2. O = Open-Closed Principle(OCP)
+`Software enitites should be open for extension but closed for modification`
+The Open-Closed Principle (OCP) is all about "write it once, write it well enough to be extensible and forget about it". The importance of this principle relies on the fact that a module may change from time to time based on new requirement. In case the new requirement arrive after the module was written, tested and uploaded to production, modifying this module is usually bad practice, especially when other modules depend on it. In order to prevent this situation, we can use the Open-Closed Principle.
+3. L = Liskov Substitution Principle (LSP)
+The Liskov's Substitution Principle (LSP) is an important 
+
