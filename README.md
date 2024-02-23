@@ -21,6 +21,13 @@
 - [Dzone](https://dzone.com/)
 - [Viblo](https://viblo.asia/newest)
 - [Java Tech Online](https://javatechonline.com/)
+- [openplanning](https://openplanning.net/)
+- [kungfutech](https://kungfutech.edu.vn/)
+- [viettuts](https://viettuts.vn/)
+- [200lab]https://200lab.io/blog/
+- [loda](https://loda.me/)
+- [longnv](https://longnv.name.vn/)
+- [stackjava](https://stackjava.com/)
 # angular-document
 - [Angular.io](https://angular.io/tutorial)
 - [Angular api](https://angular.io/api)
