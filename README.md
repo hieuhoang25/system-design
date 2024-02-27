@@ -16,15 +16,15 @@
 - [Java By Examples](http://www.javabyexamples.com/)
 - [Toptal](https://www.toptal.com/developers)
 - [All blogs from spring4](https://www.baeldung.com/java-blogs)
-- https://springframework.guru/
-- [https://piotrminkowski.com/]
+- [Spring Framework Guru](https://springframework.guru/)
+- [Piotr's TechBlog](https://piotrminkowski.com/)
 - [Dzone](https://dzone.com/)
 - [Viblo](https://viblo.asia/newest)
 - [Java Tech Online](https://javatechonline.com/)
 - [openplanning](https://openplanning.net/)
 - [kungfutech](https://kungfutech.edu.vn/)
 - [viettuts](https://viettuts.vn/)
-- [200lab]https://200lab.io/blog/
+- [200lab](https://200lab.io/blog/)
 - [loda](https://loda.me/)
 - [longnv](https://longnv.name.vn/)
 - [stackjava](https://stackjava.com/)
