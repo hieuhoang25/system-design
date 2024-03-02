@@ -28,6 +28,7 @@
 - [loda](https://loda.me/)
 - [longnv](https://longnv.name.vn/)
 - [stackjava](https://stackjava.com/)
+- [Hackernoon](https://hackernoon.com/)
 # angular-document
 - [Angular.io](https://angular.io/tutorial)
 - [Angular api](https://angular.io/api)
@@ -583,5 +584,44 @@ Single Responsibility Principle(SRP) is one of the five S.O.L.I.D principles, wh
 `Software enitites should be open for extension but closed for modification`
 The Open-Closed Principle (OCP) is all about "write it once, write it well enough to be extensible and forget about it". The importance of this principle relies on the fact that a module may change from time to time based on new requirement. In case the new requirement arrive after the module was written, tested and uploaded to production, modifying this module is usually bad practice, especially when other modules depend on it. In order to prevent this situation, we can use the Open-Closed Principle.
 3. L = Liskov Substitution Principle (LSP)
-The Liskov's Substitution Principle (LSP) is an important 
+The Liskov's Substitution Principle (LSP) is an important
+### 33. 5 common mistakes of spring developer
+1. Making everything public
+When you get dropped into a Spring Boot project you have free rein to organize your project however you want. This is great because it allows you to put your code wherever you want. However, a lot of us follow a convention where we use a package by layer architecture. This cause code that is closely related to be split into different packages and therefore having to make everything public which is not how we would typically write code.
+- Package by layer : Domain -> Controller -> Service -> Repository -> Configuration
+- Package by feature: Product, customer, order, cart
+2. Field Injection
+A common mistake is choosing field injection for Dependency Injection. There are a number of reasons that you should favor constructor injection over field injection.
+3. Interface and implementation when not necessary
+There is a right place and a right time to create interfaces but in this common mistake we take a look at a time where it doesn't make a lot of sense.
+4. Proper Rest API Design
+Spring Boot gives you the tools to quickly and easily stand up a REST API. A common mistake I often see is creating REST resources with improperr URIs. When you create a Rest resources the request method should describe the intention, not the URI.
+5. Improper Exception Handling
+When a user expects a response and none is give that isn't a good experience. It's better to return something and in the case of asking for a resource by an invalid id it's often good practice to handle that exception.
+### 34. Event-Driven Architecture (EDA) is a design pattern used in software development that emphasizes(nhấn mạnh) the production, detection, consumption(tiêu thụ), and reaction to events. Events, in this context, are notable(đáng chú ý) occurrences(lần xuất hiện) or changes in state that happen within a system. Event-Driven Architecture is wideky in various applications, ranging from simple systems to complex distributed systems. Here are key concepts to understand:![SFuVM](https://github.com/hieuhoang25/system-design/assets/74962312/782d9189-88f8-427e-91c9-e40c88cce76e)
+1. Events:
+- An event is a significant change or occurrence in the system. It could be a state change a user action, or an external trigger.
+- Examples of events include a button click in a user interface, a sensor reading in an IOT device, or a database record update.
+2. Publishers and Subscribers:
+- In an event-driven system, there are typically two main components: publishers and subscribers.
+- `Publishers` are responsible for producing events. When a notable action occurs, the publisher emits(publishes) an event.
+- `Subscribers` are components or services that are interested in certain types of events. They subscribe to receive notifications when specific events occur.
+3. Event bus and message broker:
+- Events are often communicated between publishers and subscribers through an event bus or a message broker.
+- An event bus is communication channel that facilitates the flow of events between components. It can be implemented as a simple in-memory data structure or a more robus message broker system.
+4. Decoupling:
+- One of the main advantages of EDA is decoupling. Publishers and subscribers are loosely connected, meaning they don't need to be aware of each other's existence. This makes the system more modular and scalable.
+5. Asynchronous Processing:
+- EDA often involves asynchronous communication. When an event is published, subscribers are notified asynchronously, meaning they can process the event independently of the publisher.
+6. Event sourcing:
+- Event sourcing is a related concept where the state of a system is determined by a sequence of events. Instead of storing the current state of an entity, you store the sequence of events that led to the current state.
+7. Scalability:
+- Event-driven architecture is well-suited for scalable and distributed systems. Components can operate independently, and new components can be added without disrupting the existing ones.
+8. Fault Tolerance(Sức chịu đựng):
+- EDA can contribute to fault tolerance. If a component fails, events can be replayed or processed by other components without losing critical information.
+9. Real-time Processing:
+- EDA is often associated with real-time or near-real-time processing because events are processed as they occur.
+10. Use cases:
+- Event-Driven Architecture is commonly used in various domains, including financial systems, e-commerce, IoT applications, and microservices architectures.
+
 
