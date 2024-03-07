@@ -49,6 +49,8 @@
 - [Apache project](https://www.apache.org/logos/?fbclid=IwAR1I1C3by71I6ZyDVg0L9mk_w_H8bwzsVKYYs3oeT93qmcn6YeNkeM1sico)
 - [Google Gauva](https://www.baeldung.com/guava-guide)
 - [Loda Time](https://www.joda.org/joda-time/)
+# Good Blog
+- [High Growth Engineer](https://read.highgrowthengineer.com/)
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
