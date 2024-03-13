@@ -625,5 +625,73 @@ When a user expects a response and none is give that isn't a good experience. It
 - EDA is often associated with real-time or near-real-time processing because events are processed as they occur.
 10. Use cases:
 - Event-Driven Architecture is commonly used in various domains, including financial systems, e-commerce, IoT applications, and microservices architectures.
+### 35. REST API: How  avoid duplicate resource creation on concurrent requests
+1. Method 1: Validation
+Customer payments transactions are recorded in a table called payment. Structure of the table looks like.
+```sql
+CREATE TABLE `payments` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `order_id` varchar(50) NOT NULL DEFAULT '',
+  `status` varchar(10) NOT NULL DEFAULT '',
+  `amount` decimal DEFAULT NULL,
+  `transaction_id` varchar(50) DEFAULT NULL,
+  `gateway_response` json DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+```
+Each time get a response or callback from the payment gateway, query the DB to check if there is an existsing transaction for the same user with simmilar "order_id"
+```javascript
+SELECT * from payments where user_id = ? and order_id = ?;
+```
+Pseudocode for the payment validation:
+```java
+var payment = getPayment(userId, orderId);
+if (payment) {
+  print 'Payment already exists!. Must be duplicate payment'
+  throw Error('duplicate') or return;
+}
 
+// else
 
+var newPayment = createPayment(userId, reqParams)
+```
+The problem with this method is that, when we are swamped with concurrent request with the same payload in a matter of seconds, we still can not a void duplication. Because it takes time to query and get the response from DB and during that period, we could have created multiple payment records already.
+2. Method 2: Locking
+It is a very interesting mechanism that certainly could be applied in many cases not just dealing with concurrent requests. Implementation is quite similar to the above method, however, instead of DB, we could choose to implement this in in-memory data stores such as  Redis
+```javascript
+// make a unique reference key for each payment transaction
+var paymentKey = 'PAYMENT' + user_id + order_id
+var payment = getPayment(paymentKey) // assume that this method calls redis or any other in-memory store to get the key
+if (payment) {
+  print 'Payment already exists!. Must be duplicate payment'
+  throw Error('duplicate') or return;
+}
+
+setPayment(paymentKey) // assume that this methods sets the new payment reference in in-memory
+var newPayment = createPayment(userId, reqParams)
+```
+From the above pseudocode, when we get the first request, we set the reference in in-memory and create the payment record. And for the subsequent payment records for the same transaction we ignore them. Unfortunately, even with this method, a query to in-memory was slow enough to record multiple payment records and still could not a void duplicates. Here are few interesting articles regarding locking mechanisms to explore.
+- [Stackoverflow](https://stackoverflow.com/questions/129329/optimistic-vs-pessimistic-locking)
+- [Couchbase](https://blog.couchbase.com/optimistic-or-pessimistic-locking-which-one-should-you-pick/)
+3. Method 3: Queuing
+his could be a more reliable method and gives more flexibility for the application to deal with concurrent requests.
+
+The idea here is to queue all the incoming requests into a queue and deal with them slowly using a consumer and validate each incoming request to make sure we capture only one request.
+4. Database table with composite UNIQUE constrain
+In this method, we design the payments table with a composite unique key that ensures us to have a unique record for each request.
+```sql
+CREATE TABLE `payments` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `order_id` varchar(50) NOT NULL DEFAULT '',
+  `status` varchar(10) NOT NULL DEFAULT '',
+  `amount` decimal DEFAULT NULL,
+  `transaction_id` varchar(50) DEFAULT NULL,
+  `gateway_response` json DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `unique_payment_transaction` (`user_id`,`order_id`,`status`),
+  KEY `user_id` (`user_id`),
+  KEY `order_id` (`order_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+```
