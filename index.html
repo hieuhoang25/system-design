@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Reload Page</title>
+</head>
+
+<body>
+    <h1>Auto Reload Page</h1>
+
+    <script>
+        // Function to reload the page
+        function reloadPage() {
+            location.reload();
+        }
+
+        // Function to check internet connection
+        function checkInternetConnection() {
+            var online = navigator.onLine;
+            if (online) {
+                reloadPage();
+            }
+        }
+
+        // Check internet connection every 5 seconds
+        setInterval(checkInternetConnection, 5000);
+    </script>
+</body>
+
+</html>
