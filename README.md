@@ -30,6 +30,7 @@
 - [stackjava](https://stackjava.com/)
 - [Hackernoon](https://hackernoon.com/)
 - [Marcobehler Java](https://www.marcobehler.com/)
+- [PWSKILLS](https://pwskills.com/blog/)
 # angular-document
 - [Angular.io](https://angular.io/tutorial)
 - [Angular api](https://angular.io/api)
