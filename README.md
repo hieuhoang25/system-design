@@ -1,4 +1,5 @@
  # Several blogs or websites:
+- [Medium](https://medium.com/)
 - [Roadmap](https://roadmap.sh/)
 - [Code Beautify](https://codebeautify.org/)
 - [Dev Docs](https://devdocs.io/)
@@ -46,6 +47,9 @@
 - [Mysql tutorial](https://www.mysqltutorial.org/)
 - [Postgres tutorial](https://www.postgresqltutorial.com/)
 - [MarialDB tutorial](https://www.mariadbtutorial.com/)
+- [Wecommit](https://wecommit.com.vn/kien-thuc-huu-ich/)
+- [System Design Blog](https://newsletter.systemdesign.one/)
+- [Java Re Visted](https://javarevisited.blogspot.com/#axzz8ayPY4bC3)
 # java library 
 - [Apache common](https://commons.apache.org/?fbclid=IwAR0X5AP2TxXGtAcF72Vi6wlvrWK6F_p1irJLuUSMapERvs_FAaV2qu71BcQ)
 - [Apache project](https://www.apache.org/logos/?fbclid=IwAR1I1C3by71I6ZyDVg0L9mk_w_H8bwzsVKYYs3oeT93qmcn6YeNkeM1sico)
@@ -53,6 +57,18 @@
 - [Loda Time](https://www.joda.org/joda-time/)
 # Good Blog
 - [High Growth Engineer](https://read.highgrowthengineer.com/)
+# Technology Channels
+- [SpringDeveloper](https://www.youtube.com/@SpringSourceDev)
+- [OpenAI](https://www.youtube.com/@OpenAI/videos)
+- [IBM Technology](https://www.youtube.com/@IBMTechnology/videos)
+- [Dan Vega](https://www.youtube.com/@DanVega/playlists)
+- [Amigoscode](https://www.youtube.com/@amigoscode/videos)
+- [freeCodeCamp.org](https://www.youtube.com/@freecodecamp/videos)
+- [in28minutes - Get Cloud Certified](https://www.youtube.com/@in28minutes/videos)
+- [Telusko](https://www.youtube.com/@Telusko/videos)
+- [ByteByteGo](https://www.youtube.com/@ByteByteGo/videos)
+- [Google Cloud Tech](https://www.youtube.com/@googlecloudtech/videos)
+- [TechWorld with Nana](https://www.youtube.com/@TechWorldwithNana)
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
