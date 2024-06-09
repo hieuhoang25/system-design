@@ -69,6 +69,8 @@
 - [ByteByteGo](https://www.youtube.com/@ByteByteGo/videos)
 - [Google Cloud Tech](https://www.youtube.com/@googlecloudtech/videos)
 - [TechWorld with Nana](https://www.youtube.com/@TechWorldwithNana)
+- [VN - Hole Tex](https://www.youtube.com/@holetex)
+- [VN - Tips Javascript](https://www.youtube.com/@anonystick)
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
