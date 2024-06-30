@@ -32,6 +32,8 @@
 - [Hackernoon](https://hackernoon.com/)
 - [Marcobehler Java](https://www.marcobehler.com/)
 - [PWSKILLS](https://pwskills.com/blog/)
+- [System Design Blog](https://newsletter.systemdesign.one/)
+- [Java Re Visted](https://javarevisited.blogspot.com/#axzz8ayPY4bC3)
 # angular-document
 - [Angular.io](https://angular.io/tutorial)
 - [Angular api](https://angular.io/api)
@@ -48,8 +50,6 @@
 - [Postgres tutorial](https://www.postgresqltutorial.com/)
 - [MarialDB tutorial](https://www.mariadbtutorial.com/)
 - [Wecommit](https://wecommit.com.vn/kien-thuc-huu-ich/)
-- [System Design Blog](https://newsletter.systemdesign.one/)
-- [Java Re Visted](https://javarevisited.blogspot.com/#axzz8ayPY4bC3)
 # java library 
 - [Apache common](https://commons.apache.org/?fbclid=IwAR0X5AP2TxXGtAcF72Vi6wlvrWK6F_p1irJLuUSMapERvs_FAaV2qu71BcQ)
 - [Apache project](https://www.apache.org/logos/?fbclid=IwAR1I1C3by71I6ZyDVg0L9mk_w_H8bwzsVKYYs3oeT93qmcn6YeNkeM1sico)
@@ -69,6 +69,7 @@
 - [ByteByteGo](https://www.youtube.com/@ByteByteGo/videos)
 - [Google Cloud Tech](https://www.youtube.com/@googlecloudtech/videos)
 - [TechWorld with Nana](https://www.youtube.com/@TechWorldwithNana)
+- [Daily Coder](https://www.youtube.com/@DailyCodeBuffer)
 - [VN - Hole Tex](https://www.youtube.com/@holetex)
 - [VN - Tips Javascript](https://www.youtube.com/@anonystick)
 # System Design
