@@ -1,4 +1,5 @@
  # Several blogs or websites:
+- [GitHub Topic](https://github.com/topics)
 - [Medium](https://medium.com/)
 - [Roadmap](https://roadmap.sh/)
 - [Code Beautify](https://codebeautify.org/)
@@ -72,6 +73,18 @@
 - [Daily Coder](https://www.youtube.com/@DailyCodeBuffer)
 - [VN - Hole Tex](https://www.youtube.com/@holetex)
 - [VN - Tips Javascript](https://www.youtube.com/@anonystick)
+# Free AI Generator
+1. Code Generator
+- [GitHub Copilot](https://github.com/features/copilot)
+- [Tabnine](https://www.tabnine.com/)
+- [Codeium](https://www.codeium.com/)
+- [Cursor AI](https://www.cursor.com/)
+- [PureCode AI](https://purecode.ai/)
+2. Text Generator
+- [ChatGPT](https://chat.openai.com/)
+- [Microsoft AI](https://copilot.microsoft.com/)
+- [Gemini](https://gemini.google.com/app?hl=vi)
+
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
