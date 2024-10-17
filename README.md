@@ -84,7 +84,10 @@
 - [ChatGPT](https://chat.openai.com/)
 - [Microsoft AI](https://copilot.microsoft.com/)
 - [Gemini](https://gemini.google.com/app?hl=vi)
-
+# Feed
+- [baeldung](https://feeds.feedblitz.com/baeldung)
+# Devops 
+- [DevOps-Roadmap](https://github.com/milanm/DevOps-Roadmap)
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
