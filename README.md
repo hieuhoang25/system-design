@@ -35,6 +35,10 @@
 - [PWSKILLS](https://pwskills.com/blog/)
 - [System Design Blog](https://newsletter.systemdesign.one/)
 - [Java Re Visted](https://javarevisited.blogspot.com/#axzz8ayPY4bC3)
+- [Web-Dev](https://web.dev/)
+- [Javascript info](https://javascript.info/)
+- [java point](https://www.javatpoint.com/java-tutorial)
+- [Developer Mozilla](https://developer.mozilla.org/en-US/)
 # angular-document
 - [Angular.io](https://angular.io/tutorial)
 - [Angular api](https://angular.io/api)
