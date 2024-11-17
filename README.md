@@ -39,6 +39,7 @@
 - [Javascript info](https://javascript.info/)
 - [java point](https://www.javatpoint.com/java-tutorial)
 - [Developer Mozilla](https://developer.mozilla.org/en-US/)
+- [DevopsEdu](https://devopsedu.vn/)
 # angular-document
 - [Angular.io](https://angular.io/tutorial)
 - [Angular api](https://angular.io/api)
