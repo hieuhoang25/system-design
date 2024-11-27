@@ -78,6 +78,9 @@
 - [Daily Coder](https://www.youtube.com/@DailyCodeBuffer)
 - [VN - Hole Tex](https://www.youtube.com/@holetex)
 - [VN - Tips Javascript](https://www.youtube.com/@anonystick)
+# System Design Channels And blogs
+- [Reference](https://www.wearedevelopers.com/magazine/top-tech-youtube-channels-for-developers)
+- [freecodecamp](https://www.youtube.com/c/freecodecamp)
 # Free AI Generator
 1. Code Generator
 - [GitHub Copilot](https://github.com/features/copilot)
