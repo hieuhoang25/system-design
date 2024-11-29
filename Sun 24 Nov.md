@@ -44,6 +44,5 @@ Databases store and manage structured data
 Object storage helps store complex objects like images, videos, and documents
 Sharding helps horizontally partition data across multiple nodes
 Replication helps horizontally scale the database by copying data to multiple nodes
-
 6. Observability and Resiliency
 Gain insights into the system's internal state through metrics, logging, and tracing.
