@@ -40,6 +40,7 @@
 - [java point](https://www.javatpoint.com/java-tutorial)
 - [Developer Mozilla](https://developer.mozilla.org/en-US/)
 - [DevopsEdu](https://devopsedu.vn/)
+- [Milan Newsletter](https://newsletter.techworld-with-milan.com/)
 # angular-document
 - [Angular.io](https://angular.io/tutorial)
 - [Angular api](https://angular.io/api)
