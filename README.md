@@ -64,6 +64,7 @@
 - [Loda Time](https://www.joda.org/joda-time/)
 # Good Blog
 - [High Growth Engineer](https://read.highgrowthengineer.com/)
+- [substack](https://bryanthuynh.substack.com/)
 # Technology Channels
 - [SpringDeveloper](https://www.youtube.com/@SpringSourceDev)
 - [OpenAI](https://www.youtube.com/@OpenAI/videos)
@@ -93,10 +94,17 @@
 - [ChatGPT](https://chat.openai.com/)
 - [Microsoft AI](https://copilot.microsoft.com/)
 - [Gemini](https://gemini.google.com/app?hl=vi)
-# Feed
+# Feed And Community
 - [baeldung](https://feeds.feedblitz.com/baeldung)
+- [digitalocean](https://www.digitalocean.com/community)
 # Devops 
 - [DevOps-Roadmap](https://github.com/milanm/DevOps-Roadmap)
+- [List of Linux Blogs](https://developer.feedspot.com/linux_blogs/)
+- [Ubuntu Tutorials](https://ubuntu.com/tutorials)
+# Conventions
+- [Git Convention](https://www.conventionalcommits.org/en/v1.0.0/)
+- [Sql Convention](https://www.sqlstyle.guide/)
+- [Java Convention](https://www.oracle.com/docs/tech/java/codeconventions.pdf)
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
