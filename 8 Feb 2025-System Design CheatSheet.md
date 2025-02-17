@@ -120,4 +120,23 @@ A new request is sent to the service instance with the fastest response time.
 ![alt text](image-130.png)
 ## Object Storage
 ![alt text](image-131.png)
-https://medium.com/javarevisited/system-design-cheatsheet-4607e716db5a
+## API vs SDK
+![alt text](image-132.png)
+## Forward vs Reverse Proxy
+![alt text](image-133.png)
+## Caching
+![alt text](image-134.png) ![alt text](image-135.png)
+## Cloud Native
+![alt text](image-136.png) ![alt text](image-137.png)
+![alt text](image-138.png)
+## Event Sourcing
+![alt text](image-139.png)
+## Firewall
+![alt text](image-140.png)
+## Distributed system
+![alt text](image-141.png)
+## Batch vs Stream Processing
+![alt text](image-142.png)
+## CDN — Content Delivery Network
+![alt text](image-143.png)
+
