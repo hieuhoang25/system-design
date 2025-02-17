@@ -4,6 +4,7 @@
 - [Roadmap](https://roadmap.sh/)
 - [Code Beautify](https://codebeautify.org/)
 - [Dev Docs](https://devdocs.io/)
+- [Dev To](https://dev.to/)
 - [QA](https://fullstackindepth.com/)
 - [Blogs JavaScript](https://anonystick.com/)
 - [Interview](https://docs.google.com/document/d/1-Yvb4kVJdTWE8Wk7qrDjNqV7uN8EtfOvV6Chxip8V0o/edit?fbclid=IwAR0sSMejFPwzwOwe9U-gj-LfD2tpXtRYd0g7EI4Rb2t83eDLjIvBSb9miv4#)
@@ -41,6 +42,7 @@
 - [Developer Mozilla](https://developer.mozilla.org/en-US/)
 - [DevopsEdu](https://devopsedu.vn/)
 - [Milan Newsletter](https://newsletter.techworld-with-milan.com/)
+- [Tờ Mờ Sáng học Lập trình](https://tmsanghoclaptrinh.com/)
 # angular-document
 - [Angular.io](https://angular.io/tutorial)
 - [Angular api](https://angular.io/api)
