@@ -59,6 +59,7 @@
 - [Postgres tutorial](https://www.postgresqltutorial.com/)
 - [MarialDB tutorial](https://www.mariadbtutorial.com/)
 - [Wecommit](https://wecommit.com.vn/kien-thuc-huu-ich/)
+- [Database Blogs](https://www.tranvanbinh.vn/p/trang-chu.html)
 # java library 
 - [Apache common](https://commons.apache.org/?fbclid=IwAR0X5AP2TxXGtAcF72Vi6wlvrWK6F_p1irJLuUSMapERvs_FAaV2qu71BcQ)
 - [Apache project](https://www.apache.org/logos/?fbclid=IwAR1I1C3by71I6ZyDVg0L9mk_w_H8bwzsVKYYs3oeT93qmcn6YeNkeM1sico)
@@ -107,6 +108,8 @@
 - [Git Convention](https://www.conventionalcommits.org/en/v1.0.0/)
 - [Sql Convention](https://www.sqlstyle.guide/)
 - [Java Convention](https://www.oracle.com/docs/tech/java/codeconventions.pdf)
+# tools
+- [http toolkit apk](https://httptoolkit.com/android/)
 # System Design
 ## 1. Tomcat and Netty
 1. Netty:
