@@ -139,4 +139,9 @@ A new request is sent to the service instance with the fastest response time.
 ![alt text](image-142.png)
 ## CDN — Content Delivery Network
 ![alt text](image-143.png)
-
+## File Extensions 
+![alt text](image-145.png)
+## Best 3 YouTube Channels to Learn
+![alt text](image-146.png)
+![alt text](image-147.png)
+![alt text](image-148.png)
