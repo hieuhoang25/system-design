@@ -28,7 +28,7 @@
 - [kungfutech](https://kungfutech.edu.vn/)
 - [viettuts](https://viettuts.vn/)
 - [200lab](https://200lab.io/blog/)
-- [loda](https://loda.me/)
+- [loda](https://github.com/loda-kun) 
 - [longnv](https://longnv.name.vn/)
 - [stackjava](https://stackjava.com/)
 - [Hackernoon](https://hackernoon.com/)
@@ -43,6 +43,7 @@
 - [DevopsEdu](https://devopsedu.vn/)
 - [Milan Newsletter](https://newsletter.techworld-with-milan.com/)
 - [Tờ Mờ Sáng học Lập trình](https://tmsanghoclaptrinh.com/)
+- [Web APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API)
 # angular-document
 - [Angular.io](https://angular.io/tutorial)
 - [Angular api](https://angular.io/api)
@@ -100,6 +101,8 @@
 # Feed And Community
 - [baeldung](https://feeds.feedblitz.com/baeldung)
 - [digitalocean](https://www.digitalocean.com/community)
+- [lydiahallie.com](https://www.lydiahallie.com/)
+https://medium.com/trendyol-tech/web-performance-optimization-techniques-63fb770e6264
 # Devops 
 - [DevOps-Roadmap](https://github.com/milanm/DevOps-Roadmap)
 - [List of Linux Blogs](https://developer.feedspot.com/linux_blogs/)

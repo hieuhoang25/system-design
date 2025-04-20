@@ -16,3 +16,4 @@ Understanding these scenarios is key to building robust, scalable applications u
 
 ![alt text](image-149.png)
 ![alt text](image-150.png)
+![alt text](image-151.png)
